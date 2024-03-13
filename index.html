@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Regex Matcher & Email Validator</title>
+</head>
+<body>
+    <h1>Regex Test String Matcher</h1>
+    <form action="/" method="post">
+        <label for="test_string">Test String:</label>
+        <input type="text" id="test_string" name="test_string"><br><br>
+        <label for="regex">Regex:</label>
+        <input type="text" id="regex" name="regex"><br><br>
+        <input type="submit" value="Test Regex">
+    </form>
+    {% if matches %}
+        <h2>Matches Found:</h2>
+        <ul>
+            {% for match in matches %}
+                <li>{{ match }}</li>
+            {% endfor %}
+        </ul>
+    {% endif %}
+
+    <h1>Email Validator</h1>
+    <form action="/" method="post">
+        <label for="email">Email:</label>
+        <input type="text" id="email" name="email">
+        <input type="submit" value="Validate Email">
+    </form>
+    {% if valid is not none %}
+        {% if valid %}
+            <p>The email "{{ email }}" is valid.</p>
+        {% else %}
+            <p>The email "{{ email }}" is not valid.</p>
+        {% endif %}
+    {% endif %}
+</body>
+</html>
