@@ -7,29 +7,34 @@ Searching for specific strings or patterns within a larger body of text,
 Extracting specific information from text data.
 
 
-Objectives
+Objectives:
+
 In this project my job is to replicate the core functionality of the regex101 website. This entails creating a web application that allows users to input a test string and a regular expression (regex) and displays all the matches found.
 Steps:
-Create a new directory
+1.Create a new directory
 
-Set up virtual development environment to install Flask, a Python web framework
+2.Set up virtual development environment to install Flask, a Python web framework
 
-1.Initialize a new Flask application
+3.Initialize a new Flask application
 
-2.Create HTML templates
+4.Create HTML templates
 
-3.Define a route to handle form submission
+5.Define a route to handle form submission
 
-4.Render the results
+6.Render the results
 
-5.Test the application
+7.Test the application
 
-6.Add-on: Implement a new route where a user can validate if a given email id is valid or not.
+8.Add-on: Implement a new route where a user can validate if a given email id is valid or not.
 
-7.Deploy the application on AWS Cloud.
+9.Deploy the application on AWS Cloud.
+
 
 Tech Stack used🛠
 -Python
+
 -Flask
+
 -HTML
+
 -CSS
